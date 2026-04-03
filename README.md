@@ -7,12 +7,26 @@ Published at **writealettertodixon.com**
 ## Tech Stack
 
 - **React 19** + **Vite 6**
+- **npm workspaces** monorepo
 - Deployed via **AWS Amplify** from GitHub
+
+## Project Structure
+
+```
+├── package.json          # Root — npm workspaces config
+├── amplify.yml           # Amplify build spec (runs from root)
+├── app/                  # React SPA workspace
+│   ├── package.json
+│   ├── vite.config.js
+│   ├── index.html
+│   ├── public/
+│   └── src/
+└── README.md
+```
 
 ## Local Development
 
 ```bash
-cd app
 npm install
 npm run dev
 ```
@@ -20,7 +34,6 @@ npm run dev
 ## Production Build
 
 ```bash
-cd app
 npm run build
 npm run preview
 ```
@@ -30,10 +43,9 @@ npm run preview
 1. Push this repo to GitHub
 2. Open the [AWS Amplify Console](https://console.aws.amazon.com/amplify/)
 3. **New app** → **Host web app** → connect your GitHub repo
-4. Set **App root** to `app`
-5. Amplify auto-detects the `amplify.yml` build config
-6. Deploy
-7. Add custom domain `writealettertodixon.com` under **Domain management**
+4. Amplify auto-detects the root `amplify.yml` which builds the `app` workspace and serves from `app/dist`
+5. Deploy
+6. Add custom domain `writealettertodixon.com` under **Domain management**
 
 ## Custom Domain Setup
 
