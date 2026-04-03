@@ -390,6 +390,95 @@
   color: var(--gold);
 }
 
+/* Secure Diplomatic Channel (Instagram) */
+.sign-off__comms {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  text-align: center;
+}
+
+.sign-off__comms-header {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin-bottom: 1rem;
+}
+
+.sign-off__comms-line {
+  flex: 1;
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--gold-light), transparent);
+}
+
+.sign-off__comms-label {
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  letter-spacing: 0.25em;
+  color: var(--gold);
+  white-space: nowrap;
+}
+
+.sign-off__comms-note {
+  font-size: 0.82rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  max-width: 480px;
+  margin: 0 auto 1.2rem;
+  line-height: 1.6;
+}
+
+.sign-off__ig-link {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.3rem;
+  padding: 0.9rem 2rem;
+  border: 1.5px solid var(--gold);
+  background: rgba(161, 98, 7, 0.04);
+  text-decoration: none;
+  color: var(--ink);
+  transition: background 0.3s, border-color 0.3s, transform 0.2s;
+}
+
+.sign-off__ig-link:hover {
+  background: rgba(161, 98, 7, 0.09);
+  border-color: var(--gold-light);
+  transform: translateY(-1px);
+}
+
+.sign-off__ig-icon {
+  display: block;
+  width: 28px;
+  height: 28px;
+  color: var(--gold);
+  margin-bottom: 0.15rem;
+}
+
+.sign-off__ig-handle {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: var(--ink);
+}
+
+.sign-off__ig-clearance {
+  font-family: var(--mono);
+  font-size: 0.45rem;
+  letter-spacing: 0.2em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+}
+
+.sign-off__comms-footnote {
+  font-family: var(--mono);
+  font-size: 0.55rem;
+  color: var(--ink-faint);
+  margin-top: 0.8rem;
+  letter-spacing: 0.03em;
+  opacity: 0.7;
+}
+
 /* =============================================
    STAMPS
    ============================================= */
