@@ -1,0 +1,627 @@
+/* =============================================
+   PAGE WRAPPER
+   ============================================= */
+
+.page {
+  min-height: 100vh;
+  padding: 2.5rem 1rem;
+  position: relative;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 1s ease-out;
+}
+
+.page--revealed {
+  opacity: 1;
+}
+
+/* Full-page faint watermark */
+.watermark {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-38deg);
+  font-family: var(--mono);
+  font-size: clamp(5rem, 18vw, 14rem);
+  font-weight: 700;
+  color: rgba(220, 38, 38, 0.025);
+  letter-spacing: 0.35em;
+  pointer-events: none;
+  user-select: none;
+  white-space: nowrap;
+  z-index: 0;
+}
+
+/* =============================================
+   DOCUMENT WRAPPER
+   ============================================= */
+
+.document-wrapper {
+  max-width: 780px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 1;
+}
+
+/* =============================================
+   CLASSIFIED STRIPE (top & bottom)
+   ============================================= */
+
+.classified-stripe {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.55rem 1.2rem;
+  background: var(--red);
+  color: #fff;
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+}
+
+.classified-stripe__bar {
+  flex: 1;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.classified-stripe__text {
+  white-space: nowrap;
+}
+
+/* =============================================
+   THE DOCUMENT (paper)
+   ============================================= */
+
+.document {
+  position: relative;
+  background: var(--paper);
+  padding: clamp(2rem, 6vw, 4.5rem) clamp(1.8rem, 5vw, 4rem);
+  box-shadow:
+    0 2px 4px rgba(0, 0, 0, 0.25),
+    0 12px 40px rgba(0, 0, 0, 0.35),
+    0 30px 80px rgba(0, 0, 0, 0.2);
+}
+
+/* Subtle paper texture overlay */
+.document::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    radial-gradient(ellipse at 30% 20%, rgba(161, 98, 7, 0.035) 0%, transparent 60%),
+    radial-gradient(ellipse at 75% 70%, rgba(153, 27, 27, 0.025) 0%, transparent 50%);
+  pointer-events: none;
+}
+
+/* Thin gold/dark edge lines */
+.document__edge {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 3px;
+  pointer-events: none;
+}
+
+.document__edge--left {
+  left: 10px;
+  border-left: 1px solid rgba(161, 98, 7, 0.12);
+  border-right: 1px solid rgba(161, 98, 7, 0.06);
+}
+
+.document__edge--right {
+  right: 10px;
+  border-left: 1px solid rgba(161, 98, 7, 0.06);
+  border-right: 1px solid rgba(161, 98, 7, 0.12);
+}
+
+.document__rule {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--ink), transparent);
+  opacity: 0.15;
+  margin: 0.5rem 0 2rem;
+}
+
+/* =============================================
+   OFFICIAL SEAL
+   ============================================= */
+
+.seal {
+  text-align: center;
+  margin: 0 auto 0.5rem;
+  color: var(--red);
+  opacity: 0.12;
+}
+
+.seal__svg {
+  width: 150px;
+  height: 150px;
+}
+
+.seal__text-outer {
+  font-family: var(--mono);
+  font-size: 6px;
+  letter-spacing: 0.06em;
+}
+
+.seal__text-inner {
+  font-family: var(--mono);
+  font-size: 5.5px;
+  letter-spacing: 0.04em;
+}
+
+/* =============================================
+   DOCUMENT HEADER
+   ============================================= */
+
+.doc-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.doc-header__top-class {
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.22em;
+  color: var(--red);
+  padding: 0.45rem 0;
+  border-top: 2px solid var(--red);
+  border-bottom: 2px solid var(--red);
+  margin-bottom: 1.8rem;
+}
+
+.doc-header__title {
+  font-family: var(--display);
+  font-size: clamp(1.5rem, 4.5vw, 2.4rem);
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 0.15rem;
+}
+
+.doc-header__org {
+  font-family: var(--serif);
+  font-size: 1.05rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  margin-bottom: 2rem;
+}
+
+/* Field rows */
+.doc-header__fields {
+  text-align: left;
+  border: 1px solid var(--ink);
+  padding: 1rem 1.3rem;
+  background: rgba(0, 0, 0, 0.015);
+  margin-bottom: 1rem;
+}
+
+.field {
+  display: flex;
+  gap: 0.6rem;
+  padding: 0.3rem 0;
+  font-size: 0.88rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.field:last-child {
+  border-bottom: none;
+}
+
+.field__label {
+  font-family: var(--mono);
+  font-size: 0.7rem;
+  font-weight: 700;
+  min-width: 90px;
+  flex-shrink: 0;
+  color: var(--ink);
+  letter-spacing: 0.06em;
+  padding-top: 2px;
+}
+
+.field__value {
+  color: var(--ink-soft);
+  line-height: 1.55;
+}
+
+.field__value--classified {
+  color: var(--red-bright);
+  font-weight: 700;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+}
+
+.doc-header__doc-id {
+  font-family: var(--mono);
+  font-size: 0.52rem;
+  letter-spacing: 0.12em;
+  color: var(--ink-faint);
+}
+
+/* =============================================
+   LETTER BODY
+   ============================================= */
+
+.letter {
+  margin-bottom: 2rem;
+}
+
+.letter p {
+  font-size: 1.02rem;
+  margin-bottom: 0.95rem;
+  text-indent: 2em;
+}
+
+.letter__salutation {
+  font-size: 1.1rem !important;
+  font-weight: 600;
+  text-indent: 0 !important;
+  margin-bottom: 1.2rem !important;
+}
+
+.letter__proclamation {
+  font-family: var(--display);
+  font-size: 1.7rem !important;
+  font-weight: 800;
+  text-align: center;
+  text-indent: 0 !important;
+  color: var(--ink);
+  margin: 1.8rem 0 !important;
+  letter-spacing: 0.03em;
+  position: relative;
+}
+
+.letter__proclamation::before,
+.letter__proclamation::after {
+  content: '';
+  display: block;
+  width: 50px;
+  height: 1px;
+  background: var(--gold);
+  margin: 0 auto 0.8rem;
+}
+
+.letter__proclamation::after {
+  margin: 0.8rem auto 0;
+}
+
+.letter__emphasis {
+  font-family: var(--mono);
+  font-size: 0.82rem !important;
+  text-align: center;
+  text-indent: 0 !important;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin: 1.5rem 0 !important;
+}
+
+.letter__closing-line {
+  margin-top: 1.5rem !important;
+  font-style: italic;
+}
+
+/* Mission list */
+.letter__missions {
+  list-style: none;
+  counter-reset: mission;
+  margin: 1.3rem 0 1.5rem;
+  padding: 0;
+}
+
+.letter__missions li {
+  counter-increment: mission;
+  position: relative;
+  padding: 0.65rem 0 0.65rem 2.8rem;
+  font-size: 0.97rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.letter__missions li:last-child {
+  border-bottom: none;
+}
+
+.letter__missions li::before {
+  content: counter(mission) '.';
+  position: absolute;
+  left: 0;
+  top: 0.65rem;
+  font-family: var(--mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--gold);
+  width: 2rem;
+  text-align: right;
+}
+
+/* =============================================
+   SIGN-OFF
+   ============================================= */
+
+.sign-off {
+  margin-top: 2.5rem;
+  margin-bottom: 2rem;
+  text-align: center;
+}
+
+.sign-off__valediction {
+  font-style: italic;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin-bottom: 2rem;
+}
+
+.sign-off__signature-block {
+  display: inline-block;
+  text-align: center;
+}
+
+.sign-off__signature-line {
+  width: 220px;
+  height: 1px;
+  background: var(--ink);
+  margin: 0 auto 0.7rem;
+  opacity: 0.4;
+}
+
+.sign-off__name {
+  font-family: var(--display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  margin-bottom: 0.2rem;
+}
+
+.sign-off__title {
+  font-family: var(--mono);
+  font-size: 0.6rem;
+  letter-spacing: 0.15em;
+  color: var(--ink-faint);
+  text-transform: uppercase;
+  margin-bottom: 1rem;
+}
+
+.sign-off__tagline {
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--gold);
+}
+
+/* =============================================
+   STAMPS
+   ============================================= */
+
+.stamp {
+  position: absolute;
+  padding: 0.4rem 1.3rem;
+  border: 3.5px solid;
+  border-radius: 3px;
+  font-family: var(--mono);
+  text-align: center;
+  opacity: 0.18;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+}
+
+.stamp__label {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.18em;
+}
+
+.stamp__sub {
+  font-size: 0.48rem;
+  letter-spacing: 0.1em;
+}
+
+.stamp--approved {
+  color: var(--green-stamp);
+  border-color: var(--green-stamp);
+}
+
+.stamp--received {
+  color: var(--blue-stamp);
+  border-color: var(--blue-stamp);
+}
+
+.stamp--urgent {
+  color: var(--violet-stamp);
+  border-color: var(--violet-stamp);
+}
+
+/* =============================================
+   FOOTER
+   ============================================= */
+
+.doc-footer {
+  margin-top: 2.5rem;
+  padding-top: 1.5rem;
+  border-top: 2px solid var(--ink);
+}
+
+/* Awaiting status */
+.doc-footer__status {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.6rem;
+  margin-bottom: 1.8rem;
+}
+
+.doc-footer__pulse {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background: var(--red-bright);
+  animation: pulse 2s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { opacity: 1; transform: scale(1); box-shadow: 0 0 0 0 rgba(220, 38, 38, 0.5); }
+  50% { opacity: 0.5; transform: scale(0.85); box-shadow: 0 0 0 6px rgba(220, 38, 38, 0); }
+}
+
+.doc-footer__status-text {
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.18em;
+  color: var(--red);
+}
+
+/* Countdown */
+.doc-footer__countdown {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.doc-footer__countdown-label {
+  font-family: var(--mono);
+  font-size: 0.56rem;
+  letter-spacing: 0.22em;
+  color: var(--ink-faint);
+  margin-bottom: 0.8rem;
+}
+
+.doc-footer__countdown-units {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.4rem;
+}
+
+.doc-footer__colon {
+  font-family: var(--mono);
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: var(--ink);
+  opacity: 0.3;
+  line-height: 1;
+  padding-top: 0.3rem;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown-unit__val {
+  font-family: var(--mono);
+  font-size: 1.8rem;
+  font-weight: 700;
+  color: var(--ink);
+  line-height: 1;
+  padding: 0.45rem 0.7rem;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+  background: rgba(0, 0, 0, 0.02);
+  min-width: 56px;
+  text-align: center;
+}
+
+.countdown-unit__label {
+  font-family: var(--mono);
+  font-size: 0.48rem;
+  letter-spacing: 0.2em;
+  color: var(--ink-faint);
+  margin-top: 0.25rem;
+}
+
+/* CTA */
+.doc-footer__cta {
+  text-align: center;
+  font-style: italic;
+  font-size: 0.88rem;
+  color: var(--ink-soft);
+  margin-bottom: 1.8rem;
+  line-height: 1.7;
+}
+
+.doc-footer__cta p {
+  margin-bottom: 0.4rem;
+}
+
+.doc-footer__classification {
+  font-family: var(--mono);
+  font-size: 0.48rem;
+  text-align: center;
+  letter-spacing: 0.15em;
+  color: var(--ink-faint);
+  opacity: 0.5;
+  padding-top: 0.8rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+/* =============================================
+   RESPONSIVE
+   ============================================= */
+
+@media (max-width: 600px) {
+  .page {
+    padding: 0.5rem;
+  }
+
+  .document {
+    padding: 1.5rem 1rem;
+  }
+
+  .document__edge--left,
+  .document__edge--right {
+    display: none;
+  }
+
+  .doc-header__fields {
+    padding: 0.6rem;
+  }
+
+  .field {
+    flex-direction: column;
+    gap: 0.15rem;
+  }
+
+  .field__label {
+    min-width: auto;
+  }
+
+  .letter__missions li {
+    padding-left: 2rem;
+  }
+
+  .letter__missions li::before {
+    width: 1.3rem;
+  }
+
+  .doc-footer__countdown-units {
+    gap: 0.2rem;
+  }
+
+  .doc-footer__colon {
+    font-size: 1.2rem;
+  }
+
+  .countdown-unit__val {
+    font-size: 1.3rem;
+    min-width: 44px;
+    padding: 0.35rem 0.4rem;
+  }
+
+  .stamp {
+    display: none;
+  }
+
+  .classified-stripe__text {
+    white-space: normal;
+    font-size: 0.5rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 601px) and (max-width: 800px) {
+  .stamp__label {
+    font-size: 0.9rem;
+  }
+}

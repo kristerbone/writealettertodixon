@@ -1,0 +1,47 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  /* Paper & background */
+  --bg: #111827;
+  --paper: #faf6ee;
+  --paper-edge: #e8dcc8;
+
+  /* Ink */
+  --ink: #1c1917;
+  --ink-soft: #44403c;
+  --ink-faint: #78716c;
+
+  /* Accents */
+  --red: #991b1b;
+  --red-bright: #dc2626;
+  --gold: #a16207;
+  --gold-light: #ca8a04;
+  --green-stamp: #166534;
+  --blue-stamp: #1e40af;
+  --violet-stamp: #6b21a8;
+
+  /* Type */
+  --serif: 'EB Garamond', 'Georgia', 'Times New Roman', serif;
+  --mono: 'Courier Prime', 'Special Elite', 'Courier New', monospace;
+  --display: 'Playfair Display', 'Georgia', serif;
+}
+
+html {
+  font-size: 17px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--serif);
+  background: var(--bg);
+  color: var(--ink);
+  line-height: 1.75;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
