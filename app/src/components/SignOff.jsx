@@ -11,9 +11,6 @@ export default function SignOff() {
         <p className="sign-off__title">
           Office of Interdimensional Cultural Affairs
         </p>
-        <p className="sign-off__tagline">
-          &ldquo;We came 36.7 light-years. The least you can do is put us on the list.&rdquo;
-        </p>
       </div>
 
       <div className="sign-off__comms">

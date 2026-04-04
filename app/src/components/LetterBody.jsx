@@ -5,7 +5,7 @@ export default function LetterBody() {
 
       <p>
         We write to you on behalf of the Arcturian High Council &mdash; a governing body of
-        fifth-dimensional light beings from the star Arcturus, located 36.7 light-years
+        fifth-dimensional light beings from the star Arcturus, located 36.6666666666666 light-years
         from your planet in the Bo&ouml;tes constellation.
       </p>
 
@@ -29,7 +29,7 @@ export default function LetterBody() {
 
       <p>
         We have therefore dispatched two of our finest Ambassadors to the island you call
-        &ldquo;Ibiza&rdquo; to attend the Opening Weekend at DC10. Their mission is threefold:
+        &ldquo;Ibiza&rdquo; to attend the Circoloco opening party at DC10. Their mission is threefold:
       </p>
 
       <ol className="letter__missions">
@@ -40,7 +40,7 @@ export default function LetterBody() {
         </li>
         <li>
           <strong>To gain access to the backstage VIP area and DJ booth</strong> &mdash; for
-          purposes of interdimensional cultural research and, frankly, personal fulfilment.
+          purposes of interdimensional cultural research.
         </li>
         <li>
           <strong>To extend an invitation</strong> for you to perform at the Arcturian
@@ -53,15 +53,14 @@ export default function LetterBody() {
       <p>
         We understand this mission is unusual. We assure you it is entirely sincere. Our
         Ambassadors will be easy to identify &mdash; they will be the ones dancing with an
-        inexplicable cosmic glow, speaking in reverent tones about your all night long sets,
-        and possibly levitating slightly during the peak hours.
+        inexplicable cosmic glow and possibly levitating slightly during the peak hours.
       </p>
 
       <p>
         Should you grant this request, the Arcturian High Council will formally recognise
         Earth as a <strong>&ldquo;Level 3 Groove Civilisation&rdquo;</strong> &mdash; a
         significant upgrade from your current classification of{' '}
-        <em>&ldquo;Level 1: Promising but Still Plays Mr. Brightside at Weddings.&rdquo;</em>
+        <em>&ldquo;Level 1: Promising but much greater groove consistency required.&rdquo;</em>
       </p>
 
       <p className="letter__closing-line">We eagerly await your response.</p>

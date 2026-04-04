@@ -2,7 +2,7 @@ export default function DocumentHeader() {
   return (
     <header className="doc-header">
       <div className="doc-header__top-class">
-        TOP SECRET // GROOVE CLEARANCE LEVEL 5 // ARCTURIAN EYES ONLY
+        TOP SECRET // GROOVE CLEARANCE LEVEL 5
       </div>
 
       <h1 className="doc-header__title">
@@ -21,7 +21,7 @@ export default function DocumentHeader() {
       </div>
 
       <div className="doc-header__doc-id">
-        DOC ID: AHC-2026-DIXON-001 &nbsp;|&nbsp; PAGE 1 OF 1 &nbsp;|&nbsp; NOT FOR DISTRIBUTION TO NON-ARCTURIAN ENTITIES
+        DOC ID: AHC-2026-DIXON-001 &nbsp;|&nbsp; PAGE 1 OF 1 &nbsp;|&nbsp;
       </div>
     </header>
   )
