@@ -1,18 +1,21 @@
 version: 1
-frontend:
-  phases:
-    preBuild:
-      commands:
-        - npm ci
-    build:
-      commands:
-        - envCache --set stackInfo ""
-        - npm run build
-  artifacts:
-    baseDirectory: app/dist
-    files:
-      - '**/*'
-  cache:
-    paths:
-      - node_modules/**/*
-      - app/node_modules/**/*
+applications:
+  - appRoot: app
+    frontend:
+      buildPath: /
+      phases:
+        preBuild:
+          commands:
+            - npm ci
+        build:
+          commands:
+            - envCache --set stackInfo ""
+            - npm run build --workspace=app
+      artifacts:
+        baseDirectory: app/dist
+        files:
+          - '**/*'
+      cache:
+        paths:
+          - node_modules/**/*
+          - app/node_modules/**/*
