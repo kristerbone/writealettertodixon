@@ -44,6 +44,220 @@
 }
 
 /* =============================================
+   SITE NAV
+   (Light bar on dark page — ink tokens are tuned for this surface.)
+   ============================================= */
+
+.site-nav {
+  margin-bottom: 1.25rem;
+  padding: 0.9rem 1rem 1rem;
+  background: var(--paper);
+  border: 1px solid rgba(28, 25, 23, 0.14);
+  border-radius: 4px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.28);
+}
+
+.site-nav__list {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: stretch;
+  justify-content: center;
+  gap: 0.5rem 1.25rem;
+  padding-bottom: 0.65rem;
+  margin-bottom: 0.15rem;
+  border-bottom: 1px solid rgba(28, 25, 23, 0.1);
+}
+
+.site-nav__link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 7.5rem;
+  min-height: 2.5rem;
+  padding: 0.5rem 0.75rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  border-radius: 3px;
+  line-height: 1.25;
+  transition: color 0.2s, background-color 0.2s;
+}
+
+.site-nav__link:hover {
+  color: var(--red);
+  background-color: rgba(153, 27, 27, 0.06);
+}
+
+.site-nav__link:focus-visible {
+  outline: 2px solid var(--red-bright);
+  outline-offset: 2px;
+}
+
+.site-nav__link--active {
+  color: var(--red);
+  background-color: rgba(153, 27, 27, 0.08);
+}
+
+/* =============================================
+   SECONDARY PAGES (Mission Updates, Dossier)
+   ============================================= */
+
+.classified-stripe--sub {
+  background: #7f1d1d;
+}
+
+.document--secondary {
+  padding-top: clamp(1.5rem, 4vw, 2.75rem);
+  padding-bottom: clamp(1.5rem, 4vw, 2.75rem);
+}
+
+.secondary-page__header {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.secondary-page__title {
+  font-family: var(--display);
+  font-size: clamp(1.35rem, 3.8vw, 2rem);
+  font-weight: 800;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--ink);
+  margin-bottom: 0.6rem;
+}
+
+.secondary-page__lede {
+  font-size: 1rem;
+  font-style: italic;
+  color: var(--ink-soft);
+  max-width: 32rem;
+  margin: 0 auto;
+  line-height: 1.55;
+}
+
+.secondary-page__empty {
+  text-align: center;
+  font-style: italic;
+  color: var(--ink-soft);
+  padding: 1.5rem 0 0.5rem;
+}
+
+.mission-update-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.mission-update-list__item {
+  padding: 1.25rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.mission-update-list__item:last-child {
+  border-bottom: none;
+}
+
+.mission-update-list__date {
+  display: block;
+  font-family: var(--mono);
+  font-size: 0.58rem;
+  letter-spacing: 0.16em;
+  color: var(--gold);
+  margin-bottom: 0.45rem;
+}
+
+.mission-update-list__title {
+  font-family: var(--display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--ink);
+  margin-bottom: 0.55rem;
+}
+
+.mission-update-list__text {
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+  margin-bottom: 0.65rem;
+  text-indent: 0;
+}
+
+.mission-update-list__text:last-child {
+  margin-bottom: 0;
+}
+
+.dossier-section {
+  margin-bottom: 1.5rem;
+}
+
+.dossier-section__title {
+  font-family: var(--mono);
+  font-size: 0.62rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: var(--red);
+  margin-bottom: 0.5rem;
+}
+
+.dossier-section p {
+  font-size: 1rem;
+  color: var(--ink-soft);
+}
+
+.dossier-section a {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: rgba(161, 98, 7, 0.45);
+  text-underline-offset: 3px;
+}
+
+.dossier-section a:hover {
+  text-decoration-color: var(--gold);
+}
+
+.dossier-faq {
+  margin-top: 0.25rem;
+}
+
+.dossier-faq__item + .dossier-faq__item {
+  margin-top: 1.15rem;
+  padding-top: 1.15rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.dossier-faq__q {
+  font-family: var(--serif);
+  font-size: 1.02rem;
+  font-weight: 600;
+  color: var(--ink);
+  margin-bottom: 0.4rem;
+  letter-spacing: 0.01em;
+}
+
+.dossier-faq__a {
+  font-size: 0.98rem;
+  color: var(--ink-soft);
+  margin-bottom: 0;
+  line-height: 1.65;
+}
+
+.dossier-footnote {
+  margin-top: 2rem;
+  padding-top: 1.25rem;
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  font-style: italic;
+  font-size: 0.92rem;
+  color: var(--ink-faint);
+  text-align: center;
+}
+
+/* =============================================
    CLASSIFIED STRIPE (top & bottom)
    ============================================= */
 
@@ -652,6 +866,21 @@
 @media (max-width: 600px) {
   .page {
     padding: 0.5rem;
+  }
+
+  .site-nav {
+    padding: 0.75rem 0.5rem 0.85rem;
+  }
+
+  .site-nav__list {
+    gap: 0.4rem 0.65rem;
+  }
+
+  .site-nav__link {
+    min-width: 5.25rem;
+    font-size: 0.72rem;
+    min-height: 2.35rem;
+    padding: 0.4rem 0.45rem;
   }
 
   .document {

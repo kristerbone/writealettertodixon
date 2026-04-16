@@ -56,4 +56,4 @@ In the Amplify Console under **Domain management**:
 3. Add the CNAME / ALIAS records
 4. SSL certificate is provisioned automatically
 
-*"We came 36.7 light-years. The least you can do is put us on the list."*
+*"We came 36.666666 light-years."*

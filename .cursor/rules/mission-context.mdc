@@ -1,0 +1,32 @@
+---
+description: Mission, voice, and product context for Write A Letter To Dixon
+alwaysApply: true
+---
+
+# Write A Letter To Dixon — mission context
+
+## What this is
+
+A playful **official diplomatic transmission** from the **Arcturian High Council** to **DJ Dixon**, formally requesting **backstage VIP access** at **DC10 Circoloco Opening Weekend, Ibiza**. The hook: *“We came 36.666666 light-years—we bought a website and everything.”*
+
+**Live site:** [writealettertodixon.com](https://writealettertodixon.com)
+
+## Tone and UX
+
+- **Voice:** Diplomatic / classified briefing meets sci-fi camp—sincere fun, not corporate or generic “blog” tone.
+- **Visual identity:** Classified document, paper, stamps, mono labels—keep new UI consistent with existing patterns in `app/src` (see `App.css`, document components).
+- **Navigation labels:** **Official Letter** (the transmission), **Mission Updates** (relay notices / field reports; route `/mission-updates`), **Dossier** (about/meta). Legacy `/signals` redirects to `/mission-updates`.
+
+## Where content lives
+
+- **Mission update entries:** `app/src/content/missionUpdates.js` — add new items at the **top** of the array (newest first); support `body` as a string or array of paragraphs.
+- **Main letter copy:** letter-related components under `app/src/components/` (e.g. `LetterBody.jsx`).
+
+## Stack (for changes)
+
+- **React 19** + **Vite 6**, workspace root builds `app/` via `amplify.yml` → **AWS Amplify**. Prefer small, focused changes; do not add unsolicited docs or refactors outside the task.
+
+## When editing copy
+
+- Prefer in-universe language (transmission, relay, field report, clearance, stardate-style dates where it fits).
+- Avoid breaking accessibility: sufficient contrast on the dark page shell; use `aria-label` on links only when visible text is not enough.

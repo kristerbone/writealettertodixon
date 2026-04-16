@@ -5,7 +5,7 @@ export default function LetterBody() {
 
       <p>
         We write to you on behalf of the Arcturian High Council &mdash; a governing body of
-        fifth-dimensional light beings from the star Arcturus, located 36.6666666666666 light-years
+        fifth-dimensional light beings from the star Arcturus, located 36.666666 light-years
         from your planet in the Bo&ouml;tes constellation.
       </p>
 
