@@ -12,9 +12,6 @@ export default function MissionUpdatesPage() {
       <article className="document document--secondary">
         <header className="secondary-page__header">
           <h1 className="secondary-page__title">Mission Updates</h1>
-          <p className="secondary-page__lede">
-            Relay notices, status pings, and whatever the subspace mail brings.
-          </p>
         </header>
 
         <div className="document__rule" />

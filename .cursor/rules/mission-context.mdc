@@ -7,19 +7,19 @@ alwaysApply: true
 
 ## What this is
 
-A playful **official diplomatic transmission** from the **Arcturian High Council** to **DJ Dixon**, formally requesting **backstage VIP access** at **DC10 Circoloco Opening Weekend, Ibiza**. The hook: *“We came 36.666666 light-years—we bought a website and everything.”*
+Playful and dryly humorous **official diplomatic transmission** from the **Arcturian High Council** to **DJ Dixon**, formally requesting **backstage VIP access** at **DC10 Circoloco Opening Weekend, Ibiza**. 
 
 **Live site:** [writealettertodixon.com](https://writealettertodixon.com)
 
 ## Tone and UX
 
-- **Voice:** Diplomatic / classified briefing meets sci-fi camp—sincere fun, not corporate or generic “blog” tone.
+- **Voice:** Diplomatic / classified briefing meets sci-fi camp—sincere fun, not corporate or generic “blog” tone. Dry humour with a german twist would be ideal. Appealing to electronic music fans with a finer taste of electronic music.
 - **Visual identity:** Classified document, paper, stamps, mono labels—keep new UI consistent with existing patterns in `app/src` (see `App.css`, document components).
 - **Navigation labels:** **Official Letter** (the transmission), **Mission Updates** (relay notices / field reports; route `/mission-updates`), **Dossier** (about/meta). Legacy `/signals` redirects to `/mission-updates`.
 
 ## Where content lives
 
-- **Mission update entries:** `app/src/content/missionUpdates.js` — add new items at the **top** of the array (newest first); support `body` as a string or array of paragraphs.
+- **Mission update entries:** `app/src/content/missionUpdates.jsx` — add new items at the **top** of the array (newest first); support `body` as a string or array of paragraphs (paragraphs may include inline links via JSX).
 - **Main letter copy:** letter-related components under `app/src/components/` (e.g. `LetterBody.jsx`).
 
 ## Stack (for changes)

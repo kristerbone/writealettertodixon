@@ -1,6 +1,7 @@
 /**
  * Mission updates — add entries as the story expands.
  * Newest entries first. `body` may be a string or an array of paragraphs.
+ * Paragraphs may be strings or React nodes (e.g. inline links).
  */
 export const missionUpdates = [
   {
@@ -9,8 +10,14 @@ export const missionUpdates = [
     title: 'Contact report: Dixon line unconfirmed; signal amplification authorized',
     body: [
       'Direct diplomatic contact with DJ Dixon has not yet been established. No verified relay through known associates has been confirmed at this time.',
-      'The delegation’s Terran social relay (@arcturianhighcouncil) is active and the full transmission has been posted. Engagement remains below target; the Council has authorized additional field reports on this site and expanded dossier material to improve discoverability and—frankly—to give Earth’s algorithms something to chew on.',
-      'Next objective: sustain a steady update cadence, cross-link from relay posts to this frequency, and pursue good-faith visibility in spaces where Circoloco- and Ibiza-adjacent humans actually read comments. Maximum groove, minimum spam.',
+      <>
+        The delegation’s Terran social relay (
+        <a href="https://www.instagram.com/arcturianhighcouncil" rel="noopener noreferrer">
+          @arcturianhighcouncil
+        </a>
+        ) is active and the full transmission has been posted. Engagement remains below target; the Council has authorized additional field reports on this site and expanded dossier material to improve discoverability.
+      </>,
+      'Next objective: sustain a steady update cadence, cross-link from relay posts to this frequency, and pursue good-faith visibility in spaces where Circoloco- and Ibiza-adjacent humans cross paths. Priority: Maximum groove.',
     ],
   },
   {

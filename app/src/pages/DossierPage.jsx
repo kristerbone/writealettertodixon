@@ -21,8 +21,7 @@ export default function DossierPage() {
           <h2 className="dossier-section__title">Mission</h2>
           <p>
             <em>Write A Letter To Dixon</em> is an official diplomatic transmission from the Arcturian High Council to DJ
-            Dixon—formally requesting backstage VIP access at DC10 Circoloco Opening Weekend, Ibiza. 36.666666 light-years
-            deserves a spot on the list.
+            Dixon—formally requesting backstage VIP access at DC10 Circoloco Opening Weekend, Ibiza.
           </p>
         </div>
 
@@ -31,7 +30,7 @@ export default function DossierPage() {
           <p>
             The <Link to="/">Official Letter</Link> is the full transmission.{' '}
             <Link to="/mission-updates">Mission Updates</Link> has relay notices, field reports, and extras as the concept
-            grows. This dossier is the boring-but-useful context file.
+            grows.
           </p>
         </div>
 
@@ -54,14 +53,13 @@ export default function DossierPage() {
             <div className="dossier-faq__item">
               <h3 className="dossier-faq__q">Is this real?</h3>
               <p className="dossier-faq__a">
-                The site is real. The backstage pass is aspirational until someone with a laminator agrees. The vibe is
-                sincere.
+                Yes.
               </p>
             </div>
             <div className="dossier-faq__item">
               <h3 className="dossier-faq__q">Why Dixon?</h3>
               <p className="dossier-faq__a">
-                Because 36.666666 light-years of travel should not end in a queue. The Council has taste.
+                The High Council has very high standards and impeccable taste
               </p>
             </div>
             <div className="dossier-faq__item">
@@ -75,7 +73,7 @@ export default function DossierPage() {
               <h3 className="dossier-faq__q">Can I help?</h3>
               <p className="dossier-faq__a">
                 Share the letter, tag thoughtfully (not spam), and send curious humans to this transmission. Good-faith
-                amplification beats bot energy.
+                amplification.
               </p>
             </div>
           </div>
@@ -85,14 +83,13 @@ export default function DossierPage() {
           <h2 className="dossier-section__title">Colophon</h2>
           <p>
             Published at{' '}
-            <a href="https://writealettertodixon.com" rel="noopener noreferrer">
-              writealettertodixon.com
+            <a href="https://writealettertodixon.club" rel="noopener noreferrer">
+              writealettertodixon.club
             </a>
             .
           </p>
         </div>
 
-        <p className="dossier-footnote">“We came 36.666666 light-years.”</p>
       </article>
 
       <div className="classified-stripe classified-stripe--sub">
