@@ -23,6 +23,12 @@ export default function DossierPage() {
             <em>Write A Letter To Dixon</em> is an official diplomatic transmission from the Arcturian High Council to DJ
             Dixon—formally requesting backstage VIP access at DC10 Circoloco Opening Weekend, Ibiza.
           </p>
+          <p>
+            The delegation also maintains a Terran social relay with periodic field reports. The third public Instagram
+            communiqué is on record; preliminary tallies suggest a modest net gain in followers since the prior beat—figures
+            remain unconfirmed, but morale is logged as rising. This is serious diplomacy with a ceremonial respect for
+            harmonics: the third transmission carries weight. 36.666666 light-years does not negotiate with obscurity.
+          </p>
         </div>
 
         <div className="dossier-section">

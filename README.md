@@ -55,5 +55,3 @@ In the Amplify Console under **Domain management**:
 2. Amplify provides the DNS records to add at your registrar
 3. Add the CNAME / ALIAS records
 4. SSL certificate is provisioned automatically
-
-*"We came 36.666666 light-years."*

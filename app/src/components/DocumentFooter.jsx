@@ -34,7 +34,7 @@ export default function DocumentFooter() {
 
       <div className="doc-footer__cta">
         <p>
-          This transmission has been published at <strong>writealettertodixon.com</strong> so
+          This transmission has been published at <strong><writealettertodixon className="club"></writealettertodixon></strong> so
           that all beings &mdash; terrestrial and otherwise &mdash; may bear witness.
         </p>
         <p>
@@ -44,7 +44,7 @@ export default function DocumentFooter() {
       </div>
 
       <div className="doc-footer__classification">
-        AHC-2026-DIXON-001 &bull; ARCTURIAN HIGH COUNCIL &bull; writealettertodixon.com
+        AHC-2026-DIXON-001 &bull; ARCTURIAN HIGH COUNCIL &bull; <writealettertodixon className="club"></writealettertodixon>
       </div>
     </footer>
   )
