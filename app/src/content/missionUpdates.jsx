@@ -11,8 +11,7 @@ export const missionUpdates = [
     body: [
       'The Council has filed its third public communiqué on the Instagram frequency. Direct diplomatic contact with DJ Dixon remains unconfirmed; the mission posture is unchanged.',
       'Preliminary telemetry suggests 4 additional Earthside followers since our previous transmission. Counts are pending full analytics review, but the upward trend is noted with dignified optimism.',
-      'Textiles note (priority): ambassadors have taken delivery of Earth-format shirts carrying the High Council’s single sanctioned seal—small on the chest, large in meaning. The garments are not decoration; they are a portable flag for a delegation that is otherwise invisible except when it speaks. Wearing the mark is how the team remembers, in public, that the transmission is still live.',
-      'Fatigue advisory: several field units report unusual tiredness. Continuous embodiment in Terran biology was not the default training track; bones, caffeine, and circadian drift are novel stressors. Morale remains high, but rest is being scheduled like any other line item. The shirts help: same insignia, same mission, softer landing when the day has been too human.',
+      'Provisioning note: ambassadors have acquired t-shirts bearing the Arcturian High Council’s insignia for the event.',
     ],
   },
   {
