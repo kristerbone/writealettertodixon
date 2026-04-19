@@ -5,6 +5,26 @@
  */
 export const missionUpdates = [
   {
+    id: '2026-04-19',
+    date: '2026-04-19',
+    title: 'Fourth field report: two-week embodiment; relay accountability; Ibiza deployment pending',
+    body: [
+      'Embodiment log: Ambassadors have maintained continuous human form on Earth for approximately fourteen days, with ongoing exploration of the planet’s sensory catalogue. Communication protocols native to this biosphere — timings, tones, platform etiquette—remain a training burden; several incidents are under informal debrief.',
+      'Domestic annex: the Delegation is operating within a host family context and has integrated a secondary Terran companion organism (quadruped, fur, high novelty). Field slang: “puppy.” Morale impact: positive. Focus impact: non-zero. Additional shiny stimuli have also competed for attention. The Council notes the mission deadline is approaching.',
+      'Relay accountability: following the latest Instagram performance review, the High Council has classified social metrics as mission-critical. The Terran relay is not decorative; it must convert curiosity into signal. Results are expected.',
+      <>
+        Diplomatic pressure:{' '}
+        <a href="https://www.instagram.com/dixon_" rel="noopener noreferrer">
+          DJ Dixon
+        </a>{' '}
+        remains non-responsive on the primary line. Hypotheses filed include 'unawareness', 'competing priorities', or 'caution'.
+        The Council elevates this to urgent correspondence: Earth’s groove-adjacent civilizational classification is not a
+        joke to the parties filing the paperwork—only half a joke, maximum.
+      </>,
+      'Movement order: Ambassadors are preparing inter-Earth transit toward Ibiza in support of the Circoloco opening-weekend objective. Objectives unchanged: secure acknowledgment, sustain relay discipline, pursue backstage VIP access with dignity. Mission priority: Maximum groove.',
+    ],
+  },
+  {
     id: '2026-04-18',
     date: '2026-04-18',
     title: 'Third mission update: preliminary follower uptick; harmonic protocol acknowledged',

@@ -16,6 +16,7 @@ Playful and dryly humorous **official diplomatic transmission** from the **Arctu
 - **Voice:** Diplomatic / classified briefing meets sci-fi camp—sincere fun, not corporate or generic “blog” tone. Dry humour with a german twist would be ideal. Appealing to electronic music fans with a finer taste of electronic music.
 - **Visual identity:** Classified document, paper, stamps, mono labels—keep new UI consistent with existing patterns in `app/src` (see `App.css`, document components).
 - **Navigation labels:** **Official Letter** (the transmission), **Mission Updates** (relay notices / field reports; route `/mission-updates`), **Dossier** (about/meta). Legacy `/signals` redirects to `/mission-updates`.
+- **Does and Don'ts** - do not mention "minimum spam" in any content. always update missions from the arcturian high council, only ever mention the ambassadors in the 3rd person. Only use positive statements, never undermine or demean humans. Humour should be clever, not crass or passive aggresive or mentioning lines of division, we are one consicenness. Always captitalise "Ambassador" or "Ambassadors". 
 
 ## Where content lives
 
