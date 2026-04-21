@@ -24,12 +24,12 @@ export default function DossierPage() {
             Dixon—formally requesting backstage VIP access at DC10 Circoloco Opening Weekend, Ibiza.
           </p>
           <p>
-            The delegation also maintains a Terran social relay with periodic field reports. After two weeks of continuous
-            human embodiment, ambassadors are learning Earth communication protocols in real time—messy, loud, and
-            deadline-bound—while preparing inter-Earth transit toward Ibiza. A fourth update is on record: the High Council
-            now treats Instagram performance as mission-critical relay accountability, not optional morale. The outreach to
-            DJ Dixon remains urgent: silence is a data point the Council would prefer not to file. Groove-capable civilization
-            is still on the table. 36.666666 light-years does not negotiate with obscurity.
+            The delegation also maintains a Terran social relay with periodic field reports. A fifth update is on record:
+            engagement remains below target, and the Council has authorized a compiled roster of Instagram contacts tied to
+            the same Circoloco opening bill—polite amplification, not spam—because direct line-of-sight to DJ Dixon is still
+            missing. Embossed business cards missed the print deadline; diplomacy continues without cardstock. Instagram
+            performance stays mission-critical. Groove-capable civilization is still on the table. 36.666666 light-years does
+            not negotiate with obscurity.
           </p>
         </div>
 

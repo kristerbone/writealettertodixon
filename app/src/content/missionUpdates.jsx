@@ -1,9 +1,85 @@
+import { Fragment } from 'react'
+
+/**
+ * Circoloco Ibiza DC-10 opening bill (Monday roster — verify dates/handles on official listings).
+ * Same-event Instagram handles for diplomatic “adjacent signal” strategy; confirm in-app before use.
+ */
+const CIRCOLOCO_OPENING_ROSTER_IG = [
+  'andme_music',
+  'alineumber',
+  'beltranmusica',
+  'callsuper',
+  'carlita_music',
+  'dixon_',
+  'gene_on_earth',
+  'hiver_music',
+  'jamback_',
+  'jenniferloveless',
+  'jimijules',
+  'lucianocadenza',
+  'moxie_worldwide',
+  'o.bee.music',
+  'palmstrax',
+  'prospa',
+  'rampa_berlin',
+  'serenda_music',
+  'sethtroxler',
+  'sossa',
+  'sweely.music',
+  'tania_vulcano',
+  'tomasstation',
+]
+
+function CircolocoOpeningRosterLinks() {
+  return (
+    <>
+      {CIRCOLOCO_OPENING_ROSTER_IG.map((handle, index) => (
+        <Fragment key={handle}>
+          {index > 0 ? ', ' : null}
+          <a href={`https://www.instagram.com/${handle}/`} rel="noopener noreferrer">
+            @{handle}
+          </a>
+        </Fragment>
+      ))}
+    </>
+  )
+}
+
 /**
  * Mission updates — add entries as the story expands.
  * Newest entries first. `body` may be a string or an array of paragraphs.
  * Paragraphs may be strings or React nodes (e.g. inline links).
  */
 export const missionUpdates = [
+  {
+    id: '2026-04-20',
+    date: '2026-04-20',
+    title: 'Fifth field report: engagement shortfall; co-bill roster compiled; print shop defeats cardstock',
+    body: [
+      'Fifth transmission: relay engagement remains below what the High Council is willing to pretend is “mysterious restraint.” The mission is visible; the mission is not viral. Morale is strained but operational.',
+      <>
+        Journey objective: accommodation has been secured at{' '}
+        <a href="https://www.instagram.com/pikesibiza/" rel="noopener noreferrer">
+          @PikesIbiza
+        </a>
+        . Ambassadors are preparing for onward movement to the island.
+      </>,
+      <>
+        Reach annex: the primary line to{' '}
+        <a href="https://www.instagram.com/dixon_" rel="noopener noreferrer">
+          DJ Dixon
+        </a>{' '}
+        is still quiet. Ambassadors have compiled the public Instagram roster for artists billed the same Circoloco DC-10 opening Monday 27th April 2026. Hypothesis: adjacent humans may carry signal without converting this into harassment—polite amplification only.
+      </>,
+      <>
+        <h4>Roster - same Opening Party:</h4>
+        <CircolocoOpeningRosterLinks />
+      </>,
+      'Provisioning setback: embossed business cards intended for dignified handoffs in  corridors and on dancefloors will not clear print deadlines before deployment to Ibiza. A civilization capable of interstellar travel remains humbled by paper stock and “two business days.” The Council is taking it well.',
+      'Next objective: sustain relay discipline, cross-link to this frequency.',
+      'Mission priority: Maximum groove.',
+    ],
+  },
   {
     id: '2026-04-19',
     date: '2026-04-19',
