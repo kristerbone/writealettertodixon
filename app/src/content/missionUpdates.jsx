@@ -5,28 +5,25 @@ import { Fragment } from 'react'
  * Same-event Instagram handles for diplomatic “adjacent signal” strategy; confirm in-app before use.
  */
 const CIRCOLOCO_OPENING_ROSTER_IG = [
-  'andme_music',
-  'alineumber',
-  'beltranmusica',
-  'callsuper',
-  'carlita_music',
+  'andmeandyou',
+  'alineumberlive',
+  'beltran',
+  'call_super',
+  'carlita',
   'dixon_',
   'gene_on_earth',
-  'hiver_music',
-  'jamback_',
-  'jenniferloveless',
-  'jimijules',
-  'lucianocadenza',
-  'moxie_worldwide',
-  'o.bee.music',
+  'jambackdj',
+  'jenniferrloveless',
+  'jimi_jules',
+  'lucianolocal',
+  'djmoxie',
   'palmstrax',
-  'prospa',
-  'rampa_berlin',
-  'serenda_music',
-  'sethtroxler',
-  'sossa',
-  'sweely.music',
-  'tania_vulcano',
+  'prospa__',
+  'rampa_keinemusik',
+  'stroxler',
+  'sosamusic',
+  'sweely_music',
+  'taniavulcano_official',
   'tomasstation',
 ]
 
@@ -52,8 +49,8 @@ function CircolocoOpeningRosterLinks() {
  */
 export const missionUpdates = [
   {
-    id: '2026-04-20',
-    date: '2026-04-20',
+    id: '2026-04-21',
+    date: '2026-04-21',
     title: 'Fifth field report: engagement shortfall; co-bill roster compiled; print shop defeats cardstock',
     body: [
       'Fifth transmission: relay engagement remains below what the High Council is willing to pretend is “mysterious restraint.” The mission is visible; the mission is not viral. Morale is strained but operational.',
